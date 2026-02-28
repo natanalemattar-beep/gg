@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* BUG #1: Hardcoded colors without theme support */
+.header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+}
+
+/* BUG #2: Missing hover state transitions */
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* BUG #3: Accessibility issue - poor contrast */
+.text-subtle {
+  color: #f0f0f0;
+  background-color: #f5f5f5;
+}
+
+/* BUG #4: Non-responsive container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* BUG #5: Inconsistent spacing */
+.card {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.input-field {
+  margin-bottom: 5px;
+}
